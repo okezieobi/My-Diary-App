@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="templates/index/style.css">
+  <title>My Diary App</title>
+</head>
+
+<body class="image1">
+  <main>
+    <header>
+      <h1>My Diary</h1>
+    </header>
+    <div id="sign-in" class="float">
+      <button class="zoom-button" id="loginForm">Sign-in</button>
+      <div id="id01" class="modal">
+        <form class="modal-content animate curve-form zoom" action="/action_page.php">
+          <div class="imgcontainer curve-form">
+            <span id="cancelLogin" class="close" title="Close Modal">&times;</span>
+          </div>
+
+          <div class="container">
+            <label for="uname">
+              <b>Username</b>
+            </label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw">
+              <b>Password</b>
+            </label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button id="login" class="form-button">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="sign-up">
+      <button class="zoom-button" id="registerForm">Sign-Up</button>
+      <div id="id02" class="modal">
+        <form class="modal-content animate curve-form" action="/action_page.php">
+          <div class="imgcontainer">
+            <span id="cancelRegister" class="close" title="Close Modal">&times;</span>
+          </div>
+
+          <div class="container">
+            <label for="uname">
+              <b>Username</b>
+            </label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw">
+              <b>Password</b>
+            </label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="email">
+              <b>Email</b>
+            </label>
+            <input type="password" placeholder="Enter Email" name="email" required>
+
+
+            <button id="register" class="form-button">Register</button>
+
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>.....</p>
+    </footer>
+  </main>
+  <script src="templates/index/javascript.js"></script>
+</body>
+
+</html>

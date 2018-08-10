@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dashboard.css">
+  <title>My Diary App</title>
+</head>
+
+<body class="image2">
+  <main>
+    <header>
+      <h1>My Diary</h1>
+    </header>
+
+    <div id="profile">
+      <div class="dropdown">
+        <input type="image" src="profile-image.png" id="profileBtn" class=" profile-img" title="profile" />
+        <div class="dropdown-content">
+          <a href="../../index.html">Sign-Out</a>
+        </div>
+      </div>
+      <div id="id02" class="modal">
+        <form class="modal-content animate curve-form zoom" action="/action_page.php">
+          <div class="imgcontainer">
+            <span id="profileCancel" class="close" title="Close Modal">&times;</span>
+            <figure>
+              <img src="profile-image.png" alt="Avatar" class="avatar">
+              <figcaption>User Profile</figcaption>
+            </figure>
+          </div>
+
+          <div class="container">
+            <label for="uname">
+              <b>Username</b>
+            </label>
+            <div name="uname" class="info">HHHHH</div>
+
+            <label for="email">
+              <b>Email</b>
+            </label>
+            <div name="email" class="info">EMAIL</div>
+
+            <label for="no-of-entries">
+              <b>No of Entries</b>
+            </label>
+            <div name="no-of-entries" class="info">Placeholder for number of entries</div>
+
+            <button id="profileForm" class="form-button">Reminder Settings</button>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+
+    <div id="nav">
+      <div class="sidenav">
+        <div class="sidenav-a">
+          <button class="zoom-button" id="newEdit" style="width:auto;">Compose</button>
+          <div id="id03" class="modal">
+            <form class="modal-content animate curve-form zoom-nav" action="/action_page.php">
+              <div class="imgcontainer">
+                <span id="newEditCancel" class="close" title="Close Modal">&times;</span>
+              </div>
+
+              <div class="container">
+                <label for="uname">
+                  <b>Subject</b>
+                </label>
+                <input type="text" placeholder="Enter diary subject" name="uname" required>
+
+                <label for="email">
+                  <b>Content</b>
+                </label>
+                <textarea placeholder="Enter diary content" class="info" name="email" required></textarea>
+
+
+                <button type="submit" class="form-button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <a class="sidenav-a" href="#">Placeholder for future functionality</a>
+      </div>
+    </div>
+    <div id="entry-list">
+      <div class="entrylist">
+        <div class="entry-div" role="button" id="entryItem" >Subject of diary entry</div>
+        <div id="id04" class="modal">
+          <div class="modal-content animate curve-form">
+            <div class="imgcontainer">
+              <span id="entryItemCancel" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container">
+              <label for="uname">
+                <b>Subject</b>
+              </label>
+              <div name="uname" class="info">kdkkffkks</div>
+
+              <label for="email">
+                <b>Content</b>
+              </label>
+              <div class="contentarea info" name="email">ldlslfdkf</div>
+              <button class="button" id="edit">Edit</button>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
