@@ -28,11 +28,11 @@ loginForm.onclick = () => {
 }
 
 register.onclick = () => {
-    window.location.href = "../dashboard/dashboard.html";
+    window.location.href = "/templates/dashboard/dashboard.html";
 }
 
 login.onclick = () => {
-    window.location.href = "../dashboard/dashboard.html";
+    window.location.href = "/templates/dashboard/dashboard.html";
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = (event) => {
